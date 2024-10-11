@@ -19,7 +19,7 @@ Public Class Filtro
         Try
             connection.Open()
 
-            Dim query As String = "SELECT * FROM Estados"
+            Dim query As String = "SELECT * FROM UF"
             adapter = New SqlDataAdapter(query, connection)
             dt = New DataTable()
             adapter.Fill(dt)
